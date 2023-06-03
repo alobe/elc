@@ -10,7 +10,7 @@ The best practice of building Koa2 with TypeScript.
 
 2. Install dependencies: `yarn`
 
-3. Rename `.env.example` to `.env`, and run `prisma db push` to synchronize the data model
+3. fill out `.env.dev`, and run `prisma db push` to synchronize the data model
 
 4. Start the server: `yarn dev`. visit: http://127.0.0.1:3001/api/user/list
 
