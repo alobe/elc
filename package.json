@@ -9,7 +9,7 @@
     "build": "tsc",
     "sync:schema" : "prisma generate && prisma migrate deploy",
     "sync:db": "prisma db push",
-    "serve": "npm run sync:schema && export NODE_ENV=production; node -r tsconfig-paths/register ./dist/app.js"
+    "serve": "npm run sync:schema && export NODE_ENV=PRODUCTION && node -r tsconfig-paths/register ./dist/app.js"
   },
   "author": "alobe (alobef0515@gmail.com)",
   "engines": {

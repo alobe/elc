@@ -7,9 +7,9 @@ import { ENVS } from './envs'
 const parsedEnvs = bootstrapBefore()
 
 const getCurrentEnv = (): ENVS => {
-  const env = process.env?.ENV
+  const env = process.env?.NODE_ENV
   if (typeof env === 'undefined') {
-    console.warn(`/n> ENV is not set, fallback to ${ENVS.DEVELOPMENT}.`)
+    console.warn(`/n> NODE_ENV is not set, fallback to ${ENVS.DEVELOPMENT}.`)
   }
   const upperCaseEnv = `${env}`.toUpperCase()
   if (upperCaseEnv === ENVS.PRODUCTION) return ENVS.PRODUCTION
