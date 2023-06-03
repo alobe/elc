@@ -16,7 +16,7 @@
   "events": {
     "restart": ""
   },
-  "watch": ["./app", "./configs", "./app.ts"],
+  "watch": ["./src"],
   "ext": "ts",
   "inspect": true
 }

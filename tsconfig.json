@@ -17,11 +17,14 @@
       "node_modules/@types",
       "typings"
     ],
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    },
+      "@/*": [
+        "./src/*",
+        // 编译后的路由别名映射，与上面的outDir对应
+        "./dist/*"
+      ]
+    }
   },
   "compileOnSave": false,
   "include": [

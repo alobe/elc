@@ -1,5 +1,5 @@
 import { Service } from 'typedi'
-import prisma from 'app/helpers/client'
+import prisma from '@/app/helpers/client'
 import { Prisma } from '@prisma/client'
 
 @Service()

@@ -1,8 +1,8 @@
 import { Server } from 'http'
-import { print } from 'configs/utils'
-import CONSTANTS from 'configs/constants'
-import createServer from 'configs/application'
-import { bootstrapAfter } from 'configs/bootstrap'
+import { print } from './configs/utils'
+import CONSTANTS from './configs/constants'
+import createServer from './configs/application'
+import { bootstrapAfter } from './configs/bootstrap'
 
 module.exports = (async (): Promise<Server> => {
   try {
