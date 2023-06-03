@@ -10,9 +10,7 @@ module.exports = {
   testRegex: '.*\\.test\\.(j|t)s?$',
   moduleNameMapper: {
     'tests/(.*)$': '<rootDir>/tests/$1',
-    'configs/(.*)$': '<rootDir>/configs/$1',
-    'app/(.*)$': '<rootDir>/app/$1',
-    server: '<rootDir>/app.ts',
+    server: '<rootDir>/src/app.ts',
     // app: '<rootDir>/app.ts',
   },
 }
