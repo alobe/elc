@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "module": "commonjs",
+    "target": "ES6",
     "outDir": "./dist",
     "lib": ["ESNext"],
     "removeComments": true,
@@ -16,21 +17,15 @@
       "node_modules/@types",
       "typings"
     ],
-    "baseUrl": ".",
+    "rootDir": "./src",
+    "baseUrl": "./src",
     "paths": {
-      "configs/*": ["./configs/*"],
-      "app": ["app"]
+      "@/*": ["src/*"]
     },
   },
   "compileOnSave": false,
   "include": [
-    "app/**/*",
-    "configs/**/*",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "files": [
-    "app.ts",
+    "src/**/*",
   ],
   "exclude": [
     "node_modules",
