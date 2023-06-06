@@ -1,11 +1,13 @@
 import { Service } from 'typedi'
-import prisma from '@/app/helpers/client'
+import { db, redis } from '@/app/helpers'
 import { Prisma } from '@prisma/client'
 
 @Service()
 export class UserService {
   async list (limit: number, offset: number) {
-    return await prisma.user.findMany({
+    const a = await redis.get('ddd')
+    console.log(a)
+    return await db.user.findMany({
       take: limit,
       skip: offset,
       select: {
@@ -20,7 +22,7 @@ export class UserService {
   }
 
   async create (user: Prisma.userCreateInput) {
-    return await prisma.user.create({
+    return await db.user.create({
       data: user
     })
   }
