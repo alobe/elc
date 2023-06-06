@@ -22,7 +22,7 @@ The best practice of building Koa2 with TypeScript.
 src
 ├── app
 │   ├── controllers         ---  server controllers
-│   ├── helpers             ---  helper func (interceptor / error handler / validator...)
+│   ├── helpers             ---  helper func (database / redis / interceptor / error handler / validator...)
 │   ├── jobs                ---  task (periodic task / trigger task / email server...)
 │   └── services            ---  adhesive controller and model
 ├── config
@@ -95,6 +95,8 @@ For the data settings of each environment, you can refer to the following:
 
 - [routing-controllers](https://github.com/typestack/routing-controllers)
 - [Prisma](https://www.prisma.io/docs/concepts)
+- [ioredis](https://luin.github.io/ioredis)
+- [redlock](https://github.com/mike-marcacci/node-redlock)
 
 ---
 
